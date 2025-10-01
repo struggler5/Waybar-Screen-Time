@@ -1,6 +1,10 @@
 # Waybar-Screen-Time
 A simple screentime widget for waybar
-<img width="884" height="66" alt="image" src="https://github.com/user-attachments/assets/ef75f81f-5cbf-4ca3-b885-f78d34065fbe" />
+<img width="1360" height="60" alt="image" src="https://github.com/user-attachments/assets/9dd41f57-d612-474f-b2df-513768105ef0" />
+
+## Dependencies
+### scrntime
+[https://pypi.org/project/scrntime/](https://github.com/sahaj-b/scrntime/tree/main)
 
 # 1 Add the way_tim.py file to your waybar directory
 
