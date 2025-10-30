@@ -1,17 +1,20 @@
 #!/usr/bin/env python3
 
 import os 
-tm =  str(os.popen("scrntime -d 1").read()).split()
+tm =  str(os.popen("scrntime -d 1 -s 1").read()).split()
 
 
 date = [tm[0][-3:], tm[1][:2 ]]
 time = [tm[3], tm[4][:2]]
-bar = tm[5][7:-7]
+bar = int(time[0][0])
 
 
 
+if int(time[0][0]) != 9:
+    str = f"[ {time[0]}:{time[1]} ]"
+else:
+    str = "[ GO TOUCH GRASS ]"
 
-s = f"[ {date[0]} {date[1]}   {time[0]}:{time[1]} {bar} ]" 
 
 
 
@@ -21,10 +24,10 @@ s = f"[ {date[0]} {date[1]}   {time[0]}:{time[1]} {bar} ]"
 
 if __name__ == "__main__":
     output = {
-        "text": s,
-        "class":"custom-screen_time"
+        "text": str,
+        "class":"screen_time"
             }
-    print(s)
+    print(str)
 
 
 
