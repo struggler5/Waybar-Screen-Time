@@ -8,9 +8,11 @@ date = [tm[0][-3:], tm[1][:2 ]]
 time = [tm[3], tm[4][:2]]
 bar = int(time[0][0])
 
+t = False 
+if 'm' not in time[0]:
+        t = True
 
-
-if int(time[0][0]) != 9:
+if t :
     str = f"[ {time[0]}:{time[1]} ]"
 else:
     str = "[ GO TOUCH GRASS ]"
